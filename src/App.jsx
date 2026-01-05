@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import { 
-  Menu, X, ChevronDown, ArrowRight, Anchor, 
-  Briefcase, Globe, Plane, Building2, Users, 
-  Leaf, Factory, ShieldCheck, Mail, ChevronRight 
+import {
+  Menu, X, ChevronDown, ArrowRight, Anchor,
+  Briefcase, Globe, Plane, Building2, Users,
+  Leaf, Factory, ShieldCheck, Mail, ChevronRight
 } from 'lucide-react';
+import logo from './assets/logo.jpg';
 
 /* AVALON CORPORATE WEBSITE
   Design Inspiration: Kearney.com (Clean, Serif headings, large imagery, professional)
@@ -58,9 +59,9 @@ const Hero = ({ navigateTo }) => (
   <div className="relative h-screen min-h-[600px] flex items-center justify-center overflow-hidden">
     {/* Background Image Placeholder - Abstract Corporate/Global */}
     <div className="absolute inset-0 z-0">
-      <img 
-        src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2670&auto=format&fit=crop" 
-        alt="Avalon Global Capability" 
+      <img
+        src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2670&auto=format&fit=crop"
+        alt="Avalon Global Capability"
         className="w-full h-full object-cover opacity-90"
       />
       <div className="absolute inset-0 bg-gradient-to-r from-slate-900/80 to-slate-900/40" />
@@ -77,13 +78,13 @@ const Hero = ({ navigateTo }) => (
           A world of capability. Avalon combines strategic management consulting with precise global trading operations.
         </p>
         <div className="flex flex-col sm:flex-row gap-4">
-          <button 
+          <button
             onClick={() => navigateTo('consulting')}
             className="px-8 py-4 bg-white text-slate-900 font-bold hover:bg-slate-100 transition-colors flex items-center justify-center gap-2"
           >
             Our Consulting <ArrowRight size={20} />
           </button>
-          <button 
+          <button
             onClick={() => navigateTo('trading')}
             className="px-8 py-4 border-2 border-white text-white font-bold hover:bg-white/10 transition-colors flex items-center justify-center gap-2"
           >
@@ -100,7 +101,7 @@ const Hero = ({ navigateTo }) => (
 const HomePage = ({ navigateTo }) => (
   <div className="animate-in fade-in duration-700">
     <Hero navigateTo={navigateTo} />
-    
+
     <section className="py-24 bg-white">
       <div className="container mx-auto px-6">
         <div className="grid md:grid-cols-2 gap-16 items-start">
@@ -197,7 +198,7 @@ const ConsultingPage = ({ navigateTo }) => (
     <div className="container mx-auto px-6 py-20">
       <div className="grid lg:grid-cols-3 gap-16">
         <div className="lg:col-span-2 space-y-20">
-          
+
           {/* Management Consulting */}
           <section>
             <div className="flex items-center gap-3 mb-6">
@@ -231,7 +232,7 @@ const ConsultingPage = ({ navigateTo }) => (
             <SectionText>
               Our team brings an understanding of both operational requirements and commercial outcomes, enabling projects that are efficient, compliant, and future-ready.
             </SectionText>
-            
+
             <div className="grid md:grid-cols-2 gap-6 mt-8">
               <div className="border border-slate-200 p-6 hover:border-slate-400 transition-colors">
                 <h4 className="font-bold text-lg mb-2">Infrastructure</h4>
@@ -254,10 +255,10 @@ const ConsultingPage = ({ navigateTo }) => (
 
           {/* Approach */}
           <section>
-             <h3 className="text-2xl font-serif font-bold mb-4">Our Approach</h3>
-             <p className="text-slate-600 italic border-l-2 border-slate-300 pl-4 py-2">
-               "We diagnose issues precisely, design tailored frameworks, and stay involved through delivery to ensure impact."
-             </p>
+            <h3 className="text-2xl font-serif font-bold mb-4">Our Approach</h3>
+            <p className="text-slate-600 italic border-l-2 border-slate-300 pl-4 py-2">
+              "We diagnose issues precisely, design tailored frameworks, and stay involved through delivery to ensure impact."
+            </p>
           </section>
 
         </div>
@@ -271,12 +272,12 @@ const ConsultingPage = ({ navigateTo }) => (
             </p>
             <div className="space-y-4">
               <div className="h-40 bg-slate-800 w-full overflow-hidden relative group">
-                 <img src="https://images.unsplash.com/photo-1542296332-2e44a996aa0a?auto=format&fit=crop&q=80&w=600" className="object-cover w-full h-full opacity-60 group-hover:opacity-100 transition-opacity" alt="Aviation" />
-                 <div className="absolute bottom-0 left-0 p-2 font-bold text-sm bg-black/50 w-full">Aviation Infrastructure</div>
+                <img src="https://www.iata.org/globalassets/iata/pressroom/generic-images/airport-airplane.jpg?width=400&height=320&rmode=crop&v=20200406112712" className="object-cover w-full h-full opacity-60 group-hover:opacity-100 transition-opacity" alt="Aviation" />
+                <div className="absolute bottom-0 left-0 p-2 font-bold text-sm bg-black/50 w-full">Aviation Infrastructure</div>
               </div>
               <div className="h-40 bg-slate-800 w-full overflow-hidden relative group">
-                 <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=600" className="object-cover w-full h-full opacity-60 group-hover:opacity-100 transition-opacity" alt="Strategy" />
-                 <div className="absolute bottom-0 left-0 p-2 font-bold text-sm bg-black/50 w-full">Corporate Strategy</div>
+                <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=600" className="object-cover w-full h-full opacity-60 group-hover:opacity-100 transition-opacity" alt="Strategy" />
+                <div className="absolute bottom-0 left-0 p-2 font-bold text-sm bg-black/50 w-full">Corporate Strategy</div>
               </div>
             </div>
           </div>
@@ -311,7 +312,7 @@ const TobaccoPage = ({ navigateTo }) => (
           <SectionText>
             Each product category is sourced and produced within strict quality parameters and in accordance with destination market regulations.
           </SectionText>
-          
+
           <div className="mt-12 bg-white p-8 border border-slate-100 shadow-xl">
             <h3 className="text-2xl font-serif font-bold mb-6 flex items-center gap-3">
               <Leaf className="text-amber-700" /> Key Specifications
@@ -341,23 +342,23 @@ const TobaccoPage = ({ navigateTo }) => (
             </ul>
           </div>
         </div>
-        
+
         <div className="space-y-8">
-           <div className="bg-slate-900 text-white p-10">
-              <h3 className="text-xl font-bold mb-4">Customization & Compliance</h3>
-              <p className="text-slate-300 leading-relaxed mb-6">
-                Specifications are customized to the buyer’s requirements, aligned with market standards, and confirmed at the time of order.
-              </p>
-              <div className="flex flex-col gap-3">
-                 <div className="flex items-center gap-2 text-sm text-slate-300"><ShieldCheck size={16} /> Market-specific blends</div>
-                 <div className="flex items-center gap-2 text-sm text-slate-300"><ShieldCheck size={16} /> Regulatory packaging alignment</div>
-                 <div className="flex items-center gap-2 text-sm text-slate-300"><ShieldCheck size={16} /> Quality assurance testing</div>
-              </div>
-           </div>
-           
-           <div className="h-64 bg-slate-200 w-full overflow-hidden relative">
-              <img src="https://images.unsplash.com/photo-1627807663249-c146e3794715?auto=format&fit=crop&q=80&w=1000" className="object-cover w-full h-full opacity-80" alt="Tobacco Fields" />
-           </div>
+          <div className="bg-slate-900 text-white p-10">
+            <h3 className="text-xl font-bold mb-4">Customization & Compliance</h3>
+            <p className="text-slate-300 leading-relaxed mb-6">
+              Specifications are customized to the buyer’s requirements, aligned with market standards, and confirmed at the time of order.
+            </p>
+            <div className="flex flex-col gap-3">
+              <div className="flex items-center gap-2 text-sm text-slate-300"><ShieldCheck size={16} /> Market-specific blends</div>
+              <div className="flex items-center gap-2 text-sm text-slate-300"><ShieldCheck size={16} /> Regulatory packaging alignment</div>
+              <div className="flex items-center gap-2 text-sm text-slate-300"><ShieldCheck size={16} /> Quality assurance testing</div>
+            </div>
+          </div>
+
+          <div className="h-64 bg-slate-200 w-full overflow-hidden relative">
+            <img src="https://images.unsplash.com/photo-1627807663249-c146e3794715?auto=format&fit=crop&q=80&w=1000" className="object-cover w-full h-full opacity-80" alt="Tobacco Fields" />
+          </div>
         </div>
       </div>
     </div>
@@ -384,7 +385,7 @@ const MetalsPage = ({ navigateTo }) => (
           <SectionText>
             We manage the sourcing and distribution of industrial metals and energy materials, serving manufacturing partners and industrial clients. Our network spans established manufacturing partners and logistics providers across multiple regions.
           </SectionText>
-          
+
           <div className="mt-12 bg-white p-8 border border-slate-100 shadow-xl">
             <h3 className="text-2xl font-serif font-bold mb-6 flex items-center gap-3">
               <Factory className="text-slate-700" /> Core Materials
@@ -414,25 +415,25 @@ const MetalsPage = ({ navigateTo }) => (
                   Reliable supply of energy materials for industrial applications.
                 </p>
                 <div className="flex gap-4">
-                   <span className="px-4 py-2 bg-slate-800 text-white text-sm font-bold rounded-full">Coking Coal</span>
-                   <span className="px-4 py-2 bg-slate-800 text-white text-sm font-bold rounded-full">Steam Coal</span>
+                  <span className="px-4 py-2 bg-slate-800 text-white text-sm font-bold rounded-full">Coking Coal</span>
+                  <span className="px-4 py-2 bg-slate-800 text-white text-sm font-bold rounded-full">Steam Coal</span>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        
+
         <div className="space-y-8">
-           <div className="bg-slate-900 text-white p-10">
-              <h3 className="text-xl font-bold mb-4">Supply Chain Reliability</h3>
-              <p className="text-slate-300 leading-relaxed">
-                 We coordinate the full process — from specification and compliance documentation to shipment and delivery — ensuring consistency, visibility, and discretion throughout the transaction.
-              </p>
-           </div>
-           
-           <div className="h-80 bg-slate-800 w-full overflow-hidden relative">
-              <img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&q=80&w=1000" className="object-cover w-full h-full opacity-60" alt="Industrial Plant" />
-           </div>
+          <div className="bg-slate-900 text-white p-10">
+            <h3 className="text-xl font-bold mb-4">Supply Chain Reliability</h3>
+            <p className="text-slate-300 leading-relaxed">
+              We coordinate the full process — from specification and compliance documentation to shipment and delivery — ensuring consistency, visibility, and discretion throughout the transaction.
+            </p>
+          </div>
+
+          <div className="h-80 bg-slate-800 w-full overflow-hidden relative">
+            <img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&q=80&w=1000" className="object-cover w-full h-full opacity-60" alt="Industrial Plant" />
+          </div>
         </div>
       </div>
     </div>
@@ -453,7 +454,7 @@ const TradingPage = ({ navigateTo }) => (
     </div>
 
     <div className="container mx-auto px-6 py-20">
-      
+
       {/* Intro */}
       <section className="mb-20 max-w-4xl">
         <SectionText>
@@ -463,12 +464,12 @@ const TradingPage = ({ navigateTo }) => (
 
       {/* Product Category Cards */}
       <div className="grid lg:grid-cols-2 gap-12 mb-20">
-        
+
         {/* Tobacco Card */}
         <div className="bg-white border border-slate-200 shadow-sm p-10 hover:shadow-xl transition-shadow cursor-pointer group" onClick={() => navigateTo('tobacco')}>
           <div className="flex items-center justify-between mb-8">
-             <Leaf className="text-amber-700" size={40} />
-             <ArrowRight className="text-slate-300 group-hover:text-amber-700 transition-colors" size={24} />
+            <Leaf className="text-amber-700" size={40} />
+            <ArrowRight className="text-slate-300 group-hover:text-amber-700 transition-colors" size={24} />
           </div>
           <h2 className="text-3xl font-serif font-bold mb-4 group-hover:text-amber-700 transition-colors">Tobacco Products</h2>
           <p className="text-slate-600 mb-8 leading-relaxed">
@@ -480,12 +481,12 @@ const TradingPage = ({ navigateTo }) => (
         {/* Metals Card */}
         <div className="bg-white border border-slate-200 shadow-sm p-10 hover:shadow-xl transition-shadow cursor-pointer group" onClick={() => navigateTo('metals')}>
           <div className="flex items-center justify-between mb-8">
-             <Factory className="text-slate-700" size={40} />
-             <ArrowRight className="text-slate-300 group-hover:text-slate-900 transition-colors" size={24} />
+            <Factory className="text-slate-700" size={40} />
+            <ArrowRight className="text-slate-300 group-hover:text-slate-900 transition-colors" size={24} />
           </div>
           <h2 className="text-3xl font-serif font-bold mb-4 group-hover:text-slate-700 transition-colors">Metals & Coal</h2>
           <p className="text-slate-600 mb-8 leading-relaxed">
-             Sourcing industrial and energy materials including Copper, Steel, Aluminum, and Coal with a focus on supply chain consistency.
+            Sourcing industrial and energy materials including Copper, Steel, Aluminum, and Coal with a focus on supply chain consistency.
           </p>
           <span className="font-bold text-slate-900 border-b-2 border-slate-900 pb-1 group-hover:text-slate-700 group-hover:border-slate-700 transition-colors">View Materials</span>
         </div>
@@ -524,70 +525,70 @@ const TradingPage = ({ navigateTo }) => (
 
 const FirmPage = ({ navigateTo }) => (
   <div className="animate-in slide-in-from-bottom-8 duration-700">
-     <div className="relative py-32 bg-slate-900">
-        <div className="absolute inset-0 overflow-hidden">
-             <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=2300" className="w-full h-full object-cover opacity-20" alt="Office" />
+    <div className="relative py-32 bg-slate-900">
+      <div className="absolute inset-0 overflow-hidden">
+        <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=2300" className="w-full h-full object-cover opacity-20" alt="Office" />
+      </div>
+      <div className="container mx-auto px-6 relative z-10">
+        <h1 className="text-5xl md:text-7xl font-serif font-bold text-white">The Firm</h1>
+        <p className="text-xl text-slate-300 mt-6 max-w-2xl">
+          Built on the principles of precision, performance, and reliability.
+        </p>
+      </div>
+    </div>
+
+    <div className="container mx-auto px-6 py-24">
+      <div className="max-w-4xl mx-auto">
+        <SectionHeading>About Avalon</SectionHeading>
+        <SectionText>
+          Avalon is a consulting and trading company built on the principles of precision, performance, and reliability. We operate across management, aviation, and international trade — helping clients and partners design, manage, and deliver with confidence.
+        </SectionText>
+        <SectionText>
+          Our work combines strategic insight, technical capability, and operational control across industries where accuracy matters most.
+        </SectionText>
+
+        <div className="my-16 border-t border-b border-slate-200 py-12">
+          <h3 className="text-2xl font-serif font-bold mb-8 text-center">Our Values</h3>
+          <div className="grid sm:grid-cols-2 gap-8">
+            <div className="flex gap-4">
+              <div className="w-12 h-12 bg-slate-100 flex items-center justify-center font-bold text-slate-900">01</div>
+              <div>
+                <h4 className="font-bold text-lg">Precision</h4>
+                <p className="text-slate-600 text-sm">In thought, design, and execution.</p>
+              </div>
+            </div>
+            <div className="flex gap-4">
+              <div className="w-12 h-12 bg-slate-100 flex items-center justify-center font-bold text-slate-900">02</div>
+              <div>
+                <h4 className="font-bold text-lg">Reliability</h4>
+                <p className="text-slate-600 text-sm">In commitments, partnerships, and delivery.</p>
+              </div>
+            </div>
+            <div className="flex gap-4">
+              <div className="w-12 h-12 bg-slate-100 flex items-center justify-center font-bold text-slate-900">03</div>
+              <div>
+                <h4 className="font-bold text-lg">Integrity</h4>
+                <p className="text-slate-600 text-sm">In how we operate and represent our clients.</p>
+              </div>
+            </div>
+            <div className="flex gap-4">
+              <div className="w-12 h-12 bg-slate-100 flex items-center justify-center font-bold text-slate-900">04</div>
+              <div>
+                <h4 className="font-bold text-lg">Adaptability</h4>
+                <p className="text-slate-600 text-sm">In responding to new challenges and market dynamics.</p>
+              </div>
+            </div>
+          </div>
         </div>
-        <div className="container mx-auto px-6 relative z-10">
-          <h1 className="text-5xl md:text-7xl font-serif font-bold text-white">The Firm</h1>
-          <p className="text-xl text-slate-300 mt-6 max-w-2xl">
-            Built on the principles of precision, performance, and reliability.
+
+        <div className="bg-slate-50 p-10">
+          <h3 className="text-2xl font-serif font-bold mb-4">Our Perspective</h3>
+          <p className="text-slate-600 leading-relaxed">
+            We believe effective organizations balance vision with structure. At Avalon, we translate complex ideas into executable plans, and plans into measurable outcomes. Whether guiding leadership decisions or coordinating global trade operations, our focus remains constant — clarity, integrity, and follow-through.
           </p>
         </div>
-     </div>
-
-     <div className="container mx-auto px-6 py-24">
-       <div className="max-w-4xl mx-auto">
-         <SectionHeading>About Avalon</SectionHeading>
-         <SectionText>
-           Avalon is a consulting and trading company built on the principles of precision, performance, and reliability. We operate across management, aviation, and international trade — helping clients and partners design, manage, and deliver with confidence.
-         </SectionText>
-         <SectionText>
-           Our work combines strategic insight, technical capability, and operational control across industries where accuracy matters most.
-         </SectionText>
-
-         <div className="my-16 border-t border-b border-slate-200 py-12">
-           <h3 className="text-2xl font-serif font-bold mb-8 text-center">Our Values</h3>
-           <div className="grid sm:grid-cols-2 gap-8">
-             <div className="flex gap-4">
-               <div className="w-12 h-12 bg-slate-100 flex items-center justify-center font-bold text-slate-900">01</div>
-               <div>
-                 <h4 className="font-bold text-lg">Precision</h4>
-                 <p className="text-slate-600 text-sm">In thought, design, and execution.</p>
-               </div>
-             </div>
-             <div className="flex gap-4">
-               <div className="w-12 h-12 bg-slate-100 flex items-center justify-center font-bold text-slate-900">02</div>
-               <div>
-                 <h4 className="font-bold text-lg">Reliability</h4>
-                 <p className="text-slate-600 text-sm">In commitments, partnerships, and delivery.</p>
-               </div>
-             </div>
-             <div className="flex gap-4">
-               <div className="w-12 h-12 bg-slate-100 flex items-center justify-center font-bold text-slate-900">03</div>
-               <div>
-                 <h4 className="font-bold text-lg">Integrity</h4>
-                 <p className="text-slate-600 text-sm">In how we operate and represent our clients.</p>
-               </div>
-             </div>
-             <div className="flex gap-4">
-               <div className="w-12 h-12 bg-slate-100 flex items-center justify-center font-bold text-slate-900">04</div>
-               <div>
-                 <h4 className="font-bold text-lg">Adaptability</h4>
-                 <p className="text-slate-600 text-sm">In responding to new challenges and market dynamics.</p>
-               </div>
-             </div>
-           </div>
-         </div>
-
-         <div className="bg-slate-50 p-10">
-           <h3 className="text-2xl font-serif font-bold mb-4">Our Perspective</h3>
-           <p className="text-slate-600 leading-relaxed">
-             We believe effective organizations balance vision with structure. At Avalon, we translate complex ideas into executable plans, and plans into measurable outcomes. Whether guiding leadership decisions or coordinating global trade operations, our focus remains constant — clarity, integrity, and follow-through.
-           </p>
-         </div>
-       </div>
-     </div>
+      </div>
+    </div>
   </div>
 );
 
@@ -621,33 +622,33 @@ const ContactPage = () => {
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
                 <label className="block text-sm font-bold text-slate-900 mb-2">Name</label>
-                <input 
+                <input
                   required
-                  type="text" 
+                  type="text"
                   className="w-full p-4 border border-slate-300 focus:border-slate-900 outline-none transition-colors bg-slate-50 focus:bg-white"
                   placeholder="Your full name"
                   value={formData.name}
-                  onChange={(e) => setFormData({...formData, name: e.target.value})}
+                  onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                 />
               </div>
               <div>
                 <label className="block text-sm font-bold text-slate-900 mb-2">Email Address</label>
-                <input 
+                <input
                   required
-                  type="email" 
+                  type="email"
                   className="w-full p-4 border border-slate-300 focus:border-slate-900 outline-none transition-colors bg-slate-50 focus:bg-white"
                   placeholder="name@company.com"
                   value={formData.email}
-                  onChange={(e) => setFormData({...formData, email: e.target.value})}
+                  onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                 />
               </div>
               <div>
                 <label className="block text-sm font-bold text-slate-900 mb-2">Inquiry Type</label>
                 <div className="relative">
-                  <select 
+                  <select
                     className="w-full p-4 border border-slate-300 focus:border-slate-900 outline-none appearance-none bg-slate-50 focus:bg-white"
                     value={formData.type}
-                    onChange={(e) => setFormData({...formData, type: e.target.value})}
+                    onChange={(e) => setFormData({ ...formData, type: e.target.value })}
                   >
                     <option>General Inquiry</option>
                     <option>Consulting Services</option>
@@ -659,13 +660,13 @@ const ContactPage = () => {
               </div>
               <div>
                 <label className="block text-sm font-bold text-slate-900 mb-2">Message</label>
-                <textarea 
+                <textarea
                   required
                   rows="5"
                   className="w-full p-4 border border-slate-300 focus:border-slate-900 outline-none transition-colors bg-slate-50 focus:bg-white resize-none"
                   placeholder="How can we help you?"
                   value={formData.message}
-                  onChange={(e) => setFormData({...formData, message: e.target.value})}
+                  onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                 ></textarea>
               </div>
               <button type="submit" className="w-full bg-slate-900 text-white font-bold py-4 hover:bg-slate-800 transition-colors">
@@ -705,9 +706,8 @@ const Navbar = ({ activePage, setActivePage }) => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const navLinkClass = `text-sm font-bold tracking-widest uppercase cursor-pointer hover:text-red-600 transition-colors ${
-    isScrolled || activePage !== 'home' ? 'text-slate-900' : 'text-white'
-  }`;
+  const navLinkClass = `text-sm font-bold tracking-widest uppercase cursor-pointer hover:text-red-600 transition-colors ${isScrolled || activePage !== 'home' ? 'text-slate-900' : 'text-white'
+    }`;
 
   const handleNavClick = (page) => {
     setActivePage(page);
@@ -719,35 +719,37 @@ const Navbar = ({ activePage, setActivePage }) => {
   return (
     <nav className={`fixed w-full z-50 transition-all duration-300 ${isScrolled || activePage !== 'home' ? 'bg-white shadow-md py-4' : 'bg-transparent py-6'}`}>
       <div className="container mx-auto px-6 flex justify-between items-center">
-        
+
         {/* Logo */}
-        <div 
+        <div
           onClick={() => handleNavClick('home')}
-          className={`text-2xl font-serif font-black tracking-tighter cursor-pointer ${
-            isScrolled || activePage !== 'home' ? 'text-slate-900' : 'text-white'
-          }`}
+          className="cursor-pointer flex items-center"
         >
-          AVALON
+          <img
+            src={logo}
+            alt="Avalon Logo"
+            className="h-10 w-auto transition"
+          />
         </div>
+
 
         {/* Desktop Nav */}
         <div className="hidden md:flex items-center gap-10">
           <span onClick={() => handleNavClick('home')} className={navLinkClass}>Home</span>
           <span onClick={() => handleNavClick('consulting')} className={navLinkClass}>Consulting</span>
-          
+
           {/* Dropdown for Trading */}
           <div className="relative group">
-            <span 
+            <span
               className={`${navLinkClass} flex items-center gap-1`}
               onMouseEnter={() => setTradingDropdownOpen(true)}
               onClick={() => handleNavClick('trading')}
             >
               Trading <ChevronDown size={14} />
             </span>
-            <div 
-              className={`absolute top-full left-0 bg-white shadow-xl border-t-2 border-slate-900 w-48 py-2 mt-4 transform transition-all duration-200 origin-top-left ${
-                tradingDropdownOpen ? 'opacity-100 scale-100 visible' : 'opacity-0 scale-95 invisible group-hover:opacity-100 group-hover:scale-100 group-hover:visible'
-              }`}
+            <div
+              className={`absolute top-full left-0 bg-white shadow-xl border-t-2 border-slate-900 w-48 py-2 mt-4 transform transition-all duration-200 origin-top-left ${tradingDropdownOpen ? 'opacity-100 scale-100 visible' : 'opacity-0 scale-95 invisible group-hover:opacity-100 group-hover:scale-100 group-hover:visible'
+                }`}
             >
               <div onClick={() => handleNavClick('tobacco')} className="block px-6 py-3 text-sm text-slate-700 hover:bg-slate-50 hover:text-red-700 cursor-pointer">
                 Tobacco Products
@@ -763,7 +765,7 @@ const Navbar = ({ activePage, setActivePage }) => {
         </div>
 
         {/* Mobile Toggle */}
-        <button 
+        <button
           className={`md:hidden ${isScrolled || activePage !== 'home' ? 'text-slate-900' : 'text-white'}`}
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
         >
@@ -792,9 +794,9 @@ const Footer = ({ navigateTo }) => (
     <div className="container mx-auto px-6">
       <div className="grid md:grid-cols-4 gap-12 mb-12">
         <div className="col-span-1 md:col-span-1">
-          <h2 className="text-2xl font-serif font-black text-white mb-6">AVALON</h2>
+          <img src={logo} alt="Avalon" className="h-8 mb-6" />
           <p className="text-sm leading-relaxed mb-6">
-            Precision. Performance. Perspective.<br/>
+            Precision. Performance. Perspective.<br />
             Global consulting and trading operations.
           </p>
         </div>
@@ -840,7 +842,7 @@ export default function App() {
   const [activePage, setActivePage] = useState('home');
 
   const renderPage = () => {
-    switch(activePage) {
+    switch (activePage) {
       case 'home': return <HomePage navigateTo={setActivePage} />;
       case 'consulting': return <ConsultingPage navigateTo={setActivePage} />;
       case 'trading': return <TradingPage navigateTo={setActivePage} />;
@@ -855,15 +857,14 @@ export default function App() {
   return (
     <div className="font-sans text-slate-800 bg-white min-h-screen flex flex-col">
       <Navbar activePage={activePage} setActivePage={setActivePage} />
-      
+
       <main className="flex-grow">
         {renderPage()}
       </main>
-      
-      {activePage !== 'contact' && <ContactCTA navigateToContact={() => { setActivePage('contact'); window.scrollTo(0,0); }} />}
-      
-      <Footer navigateTo={(page) => { setActivePage(page); window.scrollTo(0,0); }} />
+
+      {activePage !== 'contact' && <ContactCTA navigateToContact={() => { setActivePage('contact'); window.scrollTo(0, 0); }} />}
+
+      <Footer navigateTo={(page) => { setActivePage(page); window.scrollTo(0, 0); }} />
     </div>
   );
 }
-   
