@@ -685,7 +685,7 @@ const ContactPage = () => {
           <div>
             <Building2 className="mx-auto mb-2 text-slate-900" size={24} />
             <p className="font-bold text-slate-900">Headquarters</p>
-            <p>London • Dubai • Singapore</p>
+            <p>• Singapore</p>
           </div>
         </div>
       </div>
@@ -820,14 +820,14 @@ const Footer = ({ navigateTo }) => (
         <div>
           <h4 className="text-white font-bold mb-4 uppercase text-xs tracking-widest">Contact</h4>
           <ul className="space-y-2 text-sm">
-            <li>London, UK</li>
+            <li>Singapore, UK</li>
             <li>Dubai, UAE</li>
             <li onClick={() => navigateTo('contact')} className="text-white font-bold mt-4 cursor-pointer hover:underline">Get in Touch &rarr;</li>
           </ul>
         </div>
       </div>
       <div className="border-t border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center text-xs">
-        <p>&copy; 2025 Avalon Group. All rights reserved.</p>
+        <p>&copy; 2026 Avalon Group. All rights reserved.</p>
         <div className="flex gap-6 mt-4 md:mt-0">
           <span className="cursor-pointer hover:text-white">Privacy Policy</span>
           <span className="cursor-pointer hover:text-white">Terms of Use</span>
